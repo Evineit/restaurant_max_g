@@ -43,6 +43,11 @@ nav ul {
     color: var(--text-sub);
 }
 
+.navbar-item,
+.btn-cta {
+    cursor: pointer;
+}
+
 .selected {
     border-bottom: 5px solid var(--theme-color);
 }

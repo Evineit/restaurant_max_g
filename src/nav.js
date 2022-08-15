@@ -12,6 +12,7 @@ export default function navbar() {
   const img = document.createElement("img");
   img.src = Logo;
   img.alt = "logo";
+  img.classList.add("logo")
 
   ul.append(home, menu, contact);
   nav.append(img, ul);
