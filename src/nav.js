@@ -4,11 +4,12 @@ import Logo from "./logo.png";
 export default function navbar() {
   const nav = document.createElement("nav");
   const ul = document.createElement("ul");
-  const home = createListItem("home", true);
-  const menu = createListItem("menu");
-  const contact = createListItem("contact");
-  const img = document.createElement("img");
 
+  const home = createListItem("home", true);
+  const menu = createListItem("reviews");
+  const contact = createListItem("contact");
+
+  const img = document.createElement("img");
   img.src = Logo;
   img.alt = "logo";
 
@@ -17,8 +18,14 @@ export default function navbar() {
   return nav;
 }
 
+export function selectTab(num) {
+  document.querySelector(".selected")?.classList.remove("selected");
+  document.querySelectorAll(".navbar-item")[num]?.classList.add("selected");
+}
+
 function createListItem(text, isSelected = false) {
   const li = document.createElement("li");
+  li.classList.add("navbar-item");
   if (isSelected) {
     li.classList.add("selected");
   }

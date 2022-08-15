@@ -2,7 +2,7 @@ import "./style.css";
 
 export default function home() {
   const hero = document.createElement("div");
-  hero.classList.add("hero")
+  hero.classList.add("hero");
   const para = document.createElement("p");
 
   para.innerHTML = `I take brief but concise notes from the best cooking books of all time.
@@ -23,8 +23,8 @@ function heroTitle() {
 }
 
 function btnLearnMore() {
-    const btn = document.createElement("button")
-    btn.classList.add("btn-cta")
-    btn.textContent = "Learn more"
-    return btn
+  const btn = document.createElement("button");
+  btn.classList.add("btn-cta");
+  btn.textContent = "Learn more";
+  return btn;
 }
